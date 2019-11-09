@@ -11,11 +11,11 @@ const int sensorPin3 = 3;
  
 void setup() {
   Serial.begin(9600);   //iniciar puerto serie
-  pinMode(sensorPin12 , INPUT);  //definir pin como entrada
+ /* pinMode(sensorPin12 , INPUT);  //definir pin como entrada
   pinMode(sensorPin11 , INPUT);
   pinMode(sensorPin10 , INPUT);
   pinMode(sensorPin9 , INPUT);
-  pinMode(sensorPin8 , INPUT);
+  pinMode(sensorPin8 , INPUT);*/
   pinMode(sensorPin7 , INPUT);
   pinMode(sensorPin6 , INPUT);
   pinMode(sensorPin5 , INPUT);
@@ -34,17 +34,17 @@ void loop(){
   int value5 = 0;
   int value4 = 0;
   int value3 = 0;
-  value12 = digitalRead(sensorPin12 );  //lectura digital de pin
- value11 = digitalRead(sensorPin11 ); //
- value10 = digitalRead(sensorPin10 ); //
- value9 = digitalRead(sensorPin9 ); //
- value8 = digitalRead(sensorPin8 ); // 
+//  value12 = digitalRead(sensorPin12 );  //lectura digital de pin
+// value11 = digitalRead(sensorPin11 ); //
+// value10 = digitalRead(sensorPin10 ); //
+// value9 = digitalRead(sensorPin9 ); //
+// value8 = digitalRead(sensorPin8 ); // 
  value7 = digitalRead(sensorPin7 ); //
  value6 = digitalRead(sensorPin6 ); //
  value5 = digitalRead(sensorPin5 ); //
  value4 = digitalRead(sensorPin4 ); //
  value3 = digitalRead(sensorPin3 ); //
-  if (value12 == HIGH) {
+/*  if (value12 == HIGH) {
       Serial.println("LuM;Pastillero Vacio");
   }
   if (value11 == HIGH) {
@@ -59,7 +59,7 @@ void loop(){
 
   if (value8 == HIGH) {
       Serial.println("DoM;Pastillero Vacio");
-  }
+  }*/
   if (value7 == HIGH) {
       Serial.println("LuN;Pastillero Vacio");
   }
